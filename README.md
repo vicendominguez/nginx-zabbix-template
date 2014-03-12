@@ -1,4 +1,4 @@
-wowza-nginx-template
+nginx-zabbix-template
 =====================
 
 Description
