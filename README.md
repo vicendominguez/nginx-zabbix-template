@@ -4,7 +4,7 @@ nginx-zabbix-template
 Description
 -----------
 
-This is a minimal template to get info about your NGINX server.
+This is a minimal template to get info from your NGINX server.
 
 Monitoring information by now:
 
