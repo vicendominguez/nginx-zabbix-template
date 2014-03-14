@@ -4,7 +4,7 @@ nginx-zabbix-template
 Description
 -----------
 
-This is a minimal template to get info from your NGINX server.
+This is a minimal template to get info from your NGINX server from two places. Via zabbix-agentd in clients or via externalscripts in zabbix server. Choose your option.
 
 Monitoring information by now:
 
@@ -17,10 +17,10 @@ Monitoring information by now:
 * waiting
 
 
-Install
--------
+Installation in the Zabbix Server
+---------------------------------
 
-You should look for the external scripts directory in your Zabbix configuration file. 
+You should look for the external scripts directory in your Zabbix Server configuration file. 
 In the CentOS 6.4 RPM Zabbix installation is: 
 
 ``` 
@@ -35,7 +35,7 @@ Choose the XML file and import.
 
 Apply this new template to your Wowza servers. 
 
-You don't need to modify the template if you are using the standard port to access to the Wowza URL (port 8086).
+You don't need to modify the template if you are using the standard port to access to the NGINX (port 80).
 
 Environment
 -----------
@@ -45,8 +45,7 @@ I am using this script in my production environment:
 * Nginx 1.4.5
 * Zabbix 2.2.x
 
+Screenshots
+-----------
+![Screenshot](img/zabbix--nginx.png)
 
-TODO
-----
-
-* Zabbix template pending, this a first release.

@@ -19,7 +19,7 @@ import re
 ##
 
 def Usage ():
-        print "Usage: getWowzaInfo.py -h 127.0.0.1 -P 80 -a [active|acepted|handled|request|reading|writting|waiting]"
+        print "Usage: getWowzaInfo.py -h 127.0.0.1 -P 80 -a [active|accepted|handled|request|reading|writting|waiting]"
         sys.exit(2)
 
 ##
