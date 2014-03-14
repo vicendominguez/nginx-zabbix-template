@@ -47,5 +47,5 @@ I am using this script in my production environment:
 
 Screenshots
 -----------
-![Screenshot](img/zabbix--nginx.png)
+![Screenshot](img/zabbix-nginx.png)
 
