@@ -16,6 +16,27 @@ Monitoring information by now:
 * writting
 * waiting
 
+NGINX Config
+------------
+
+Try to add this lines:
+
+```
+  location /nginx_status {
+        # Turn on nginx stats
+        stub_status on;
+        # I do not need logs for stats
+        access_log   off;
+        # Security: Only allow access from IP #
+        allow zabbix_server;
+        # Send rest of the world to /dev/null #
+        deny all;
+    }
+
+```
+
+Being zabbix_server the hostname or the IP address of your zabbix server or localhost if it is installed in zabbix_agent.
+
 
 Installation in the Zabbix Server
 ---------------------------------
