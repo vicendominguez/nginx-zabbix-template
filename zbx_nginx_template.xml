@@ -247,7 +247,7 @@
                     <valuemap/>
                 </item>
                 <item>
-                    <name>NginxWritting Connections</name>
+                    <name>Nginx Writting Connections</name>
                     <type>10</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
