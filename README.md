@@ -54,9 +54,13 @@ Now, in your Zabbix frontend: Configuration-Templates section, Import bottom in 
 
 Choose the XML file and import.
 
-Apply this new template to your Wowza servers. 
+Apply this new template to your NGINX servers. 
 
 You don't need to modify the template if you are using the standard port to access to the NGINX (port 80).
+
+It permits a fast configuration because of you can apply the same template to all your NGINX servers without modification/installation in the agents.
+
+Of course, it can be to work in the agent/client side too.
 
 Environment
 -----------
