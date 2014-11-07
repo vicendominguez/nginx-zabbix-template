@@ -60,7 +60,7 @@ You don't need to modify the template if you are using the standard port to acce
 
 It permits a fast configuration because of you can apply the same template to all your NGINX servers without modification/installation in the agents.
 
-Of course, it can be to work in the agent/client side too.
+Of course, it can work in the agent/client side too.
 
 Environment
 -----------
