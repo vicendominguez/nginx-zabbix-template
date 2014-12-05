@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2014-03-14T11:40:02Z</date>
+    <date>2014-12-05T13:38:10Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -24,7 +24,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;accepted&quot;]</key>
+                    <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;accepted&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -55,6 +55,7 @@
                     <inventory_link>0</inventory_link>
                     <applications/>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Nginx Active Connections</name>
@@ -62,7 +63,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;active&quot;]</key>
+                    <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;active&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -93,6 +94,7 @@
                     <inventory_link>0</inventory_link>
                     <applications/>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Nginx Handled Connections</name>
@@ -100,7 +102,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;handled&quot;]</key>
+                    <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;handled&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -131,6 +133,7 @@
                     <inventory_link>0</inventory_link>
                     <applications/>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Nginx Reading Connections</name>
@@ -138,7 +141,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;reading&quot;]</key>
+                    <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;reading&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -169,6 +172,7 @@
                     <inventory_link>0</inventory_link>
                     <applications/>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Nginx Total Requests</name>
@@ -176,7 +180,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;requests&quot;]</key>
+                    <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;requests&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -207,6 +211,7 @@
                     <inventory_link>0</inventory_link>
                     <applications/>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Nginx Waiting Connections</name>
@@ -214,7 +219,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;waiting&quot;]</key>
+                    <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;waiting&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -245,6 +250,7 @@
                     <inventory_link>0</inventory_link>
                     <applications/>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Nginx Writting Connections</name>
@@ -252,7 +258,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;writting&quot;]</key>
+                    <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;writting&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -283,6 +289,7 @@
                     <inventory_link>0</inventory_link>
                     <applications/>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
             </items>
             <discovery_rules/>
@@ -319,7 +326,7 @@
                     <type>0</type>
                     <item>
                         <host>Template Nginx Info</host>
-                        <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;accepted&quot;]</key>
+                        <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;accepted&quot;]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -331,7 +338,7 @@
                     <type>0</type>
                     <item>
                         <host>Template Nginx Info</host>
-                        <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;handled&quot;]</key>
+                        <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;handled&quot;]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -343,7 +350,7 @@
                     <type>0</type>
                     <item>
                         <host>Template Nginx Info</host>
-                        <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;requests&quot;]</key>
+                        <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;requests&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -375,7 +382,7 @@
                     <type>0</type>
                     <item>
                         <host>Template Nginx Info</host>
-                        <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;active&quot;]</key>
+                        <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;active&quot;]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -387,7 +394,7 @@
                     <type>0</type>
                     <item>
                         <host>Template Nginx Info</host>
-                        <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;reading&quot;]</key>
+                        <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;reading&quot;]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -399,7 +406,7 @@
                     <type>0</type>
                     <item>
                         <host>Template Nginx Info</host>
-                        <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;waiting&quot;]</key>
+                        <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;waiting&quot;]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -411,7 +418,7 @@
                     <type>0</type>
                     <item>
                         <host>Template Nginx Info</host>
-                        <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;writting&quot;]</key>
+                        <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;writting&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
