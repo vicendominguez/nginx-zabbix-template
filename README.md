@@ -22,7 +22,7 @@ NGINX Config
 Try to add this lines:
 
 ```
-  location /nginx_status {
+  location =/nginx_status {
         # Turn on nginx stats
         stub_status on;
         # I do not need logs for stats
@@ -67,7 +67,7 @@ Environment
 
 I am using this script in my production environment:
 
-* Nginx 1.4.5
+* Nginx 1.4.5+
 * Zabbix 2.2.x
 
 Screenshots
