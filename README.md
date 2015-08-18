@@ -22,7 +22,7 @@ NGINX Config
 Try to add this lines:
 
 ```
-  location =/nginx_status {
+  location =/nginx_status/ {
         # Turn on nginx stats
         stub_status on;
         # I do not need logs for stats
