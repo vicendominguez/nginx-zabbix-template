@@ -53,7 +53,7 @@ Copy the python script there. A chmod/chown to get execution permission is neces
 
 Now, in your Zabbix frontend: Configuration-Templates section, Import bottom in the right.
 
-Choose the XML file and import.
+Choose the XML file (for server installation: zbx_nginx_template.xml) and import it.
 
 Apply this new template to your NGINX servers. 
 
