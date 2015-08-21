@@ -37,6 +37,7 @@ Try to add this lines:
 
 Being zabbix_server the hostname or the IP address of your zabbix server or localhost if it is installed in zabbix_agent.
 
+Choose ONE of the installation options below
 
 Installation in the Zabbix Server
 ---------------------------------
@@ -60,8 +61,20 @@ You don't need to modify the template if you are using the standard port to acce
 
 It permits a fast configuration because of you can apply the same template to all your NGINX servers without modification/installation in the agents.
 
-Of course, it can work in the agent/client side too.
+Installation on a Zabbix Client
+-------------------------------
 
+CentOS
+
+Copy getNginxInfo.py to /usr/local/sbin/ - You need to edit zabbix-nginx.conf if you use a different location
+
+Copy zabbix-nginx.conf to /etc/zabbix/zabbix_agentd.d/ - zabbix-nginx.conf must be updated if you want to use a different port than port 80
+
+Restart the zabbix-agent
+
+Import zbx_nginx_agent_template.xml in your Zabbix frontend : Configuration-Templates section, Import button top  right.
+
+-----------
 Environment
 -----------
 
