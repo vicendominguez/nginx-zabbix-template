@@ -13,7 +13,7 @@ Monitoring information by now:
 * handled
 * requests
 * reading
-* writting
+* writing
 * waiting
 
 NGINX Config

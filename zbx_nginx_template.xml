@@ -286,7 +286,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;writting&quot;]</key>
+                    <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;writing&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -450,7 +450,7 @@
                     <type>0</type>
                     <item>
                         <host>Template Nginx Info</host>
-                        <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;writting&quot;]</key>
+                        <key>getNginxInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;80&quot;,&quot;-a&quot;,&quot;writing&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
