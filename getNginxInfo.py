@@ -8,7 +8,7 @@
 # -a handled 
 # -a requests
 # -a reading
-# -a writting
+# -a writing
 # -a waiting
 #
 
@@ -19,7 +19,7 @@ import re
 ##
 
 def Usage ():
-        print "Usage: getNginxInfo.py  -h 127.0.0.1 -p 80 -a [active|accepted|handled|request|reading|writting|waiting]"
+        print "Usage: getNginxInfo.py  -h 127.0.0.1 -p 80 -a [active|accepted|handled|request|reading|writing|waiting]"
         sys.exit(2)
 
 ##
@@ -70,7 +70,7 @@ def main ():
 	        print buffer[3]
 	elif ( getInfo == "reading"):
 	        print buffer[4]
-	elif ( getInfo == "writting"):
+	elif ( getInfo == "writing"):
 	        print buffer[5]
 	elif ( getInfo == "waiting"):
 	       	print buffer[6]
