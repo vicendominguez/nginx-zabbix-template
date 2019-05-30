@@ -1,4 +1,4 @@
-#!/bin/env python
+#!/usr/bin/env python
 ###  Vicente Dominguez
 #
 # Options:
@@ -13,13 +13,14 @@
 #
 
 
-import urllib2, base64, sys, getopt
+import urllib2, base64, sys, getopt, ssl
 import re
 
 ##
 
 def Usage ():
-        print "Usage: getNginxInfo.py  -h 127.0.0.1 -p 80 -a [active|accepted|handled|request|reading|writing|waiting]"
+        print "Usage: getNginxInfo.py  -h 127.0.0.1 -p 80 -a [active|accepted|handled|request|reading|writing|waiting] [-k]"
+	print "-k = Ignore certificate error"
         sys.exit(2)
 
 ##
@@ -30,12 +31,13 @@ def main ():
 	host = "localhost"
 	port = "80"
 	getInfo = "None"
+	ignorecert = "0"
 
 	if len(sys.argv) < 2:
 		Usage()
 
 	try:
-        	opts, args = getopt.getopt(sys.argv[1:], "h:p:a:")
+        	opts, args = getopt.getopt(sys.argv[1:], "h:p:a:k")
 	except getopt.GetoptError:
                 Usage()
 
@@ -47,10 +49,21 @@ def main ():
         	        port = arg
 	        if opt == "-a" :
         	        getInfo = arg
+		if opt == "-k" :
+			ignorecert = "1"
 
-	url="http://" + host + ":" + port + "/nginx_status/"
+	if (port == "443"):
+		url="https://" + host + "/nginx_status/"
+	else:
+		url="http://" + host + ":" + port + "/nginx_status/"
+
 	request = urllib2.Request(url)
-	result = urllib2.urlopen(request)
+
+	if (ignorecert == "1"):
+		context = ssl._create_unverified_context()
+		result = urllib2.urlopen(request, context=context)
+	else:
+		result = urllib2.urlopen(request)
 
 	buffer = re.findall(r'\d{1,8}', result.read())
 
