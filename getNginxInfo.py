@@ -65,7 +65,8 @@ def main ():
 	else:
 		result = urllib2.urlopen(request)
 
-	buffer = re.findall(r'\d{1,8}', result.read())
+	buffer = re.findall(r'\d{1,}', result.read())
+
 
 ## Format:
 ## Active connections: 196
